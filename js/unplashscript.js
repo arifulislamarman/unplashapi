@@ -92,11 +92,11 @@ function processImage(data){
 
 // Get Value from search field
 
-function searchValue(e){
-    e.preventDefault();
+function searchValue(){
+    event.preventDefault();
     let searchValue = document.getElementById('search-value').value;
     getUnsplashImages(searchValue);
-    //document.getElementById('search-value').value = '';
+    document.getElementById('search-value').value = '';
 }
 
 window.onload = function ridirection(){
