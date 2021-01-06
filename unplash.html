@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheet Link add-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!--Js File Link add-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/unplashscript.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    
+    
+    
+    <title>Unplash Api</title>
+    
+</head>
+<body>
+    <!--Header Nav Section-->
+    <section class="col-wrap">
+        <nav class="navbar col-12">
+            <div class="logo col-1">
+                <a href="http://127.0.0.1:5500/unplashapp/unplash.html" class="brand"><svg width="32" height="32" class="_1Jlgk" version="1.1" viewBox="0 0 32 32" aria-labelledby="unsplash-home" aria-hidden="false"><title id="unsplash-home">Unsplash Home</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></a>
+            </div>
+            <ul class="main-nav col-11 display-flex">
+                <li class="menu-link"><a href="http://127.0.0.1:5500/unplashapp/unplash.html">Editorial</a></li>
+                <li class="menu-link"><a href="/t/wallpapers">Wallpapers</a></li>
+                <li class="menu-link"><a href="/t/nature">Nature</a></li>
+                <li class="menu-link"><a href="/t/people">People</a></li>
+                <li class="menu-link"><a href="/t/architecture">Architecture</a></li>
+                <li class="menu-link"><a href="/t/current-events">Current Events</a></li>
+                <li class="menu-link"><a href="/t/experimental">Experimental</a></li>
+                <li class="menu-link"><a href="/t/fashion">Fashion</a></li>
+                <li class="menu-link"><a href="/t/film">Film</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Search Section-->
+    <section class="col-wrap">
+        <div id="search-wrap" class="col-12 display-flex flex-center">
+            <div class="inner-wrap col-12">
+                <div class="hero-title-wrap col-5">
+                    <h1 class="search-title"> Unsplash</h1>
+                 <div>
+                    <p class="search-subhead">
+                        The internet’s source of<!-- --> 
+                        <a class="license" href="/license">freely-usable images</a>.
+                    </p>
+                    <p class="powered">Powered by creators everywhere.</p>
+                    <div class="from-wrap">
+                        
+                        <form class="search-from display-flex">
+                                    <button class="search-button" type="submit" onclick="searchValue()" >
+                                        <svg width="20" height="20" class="" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                                            <path d="M31 28.64l-7.57-7.57a12.53 12.53 0 1 0-2.36 2.36l7.57 7.57zm-17.5-6a9.17 9.17 0 1 1 6.5-2.64 9.11 9.11 0 0 1-6.5 2.67z"></path>
+                                        </svg>
+                                       
+                                    </button>
+                                    <div class="search-bar">
+                                        <input id="search-value" type="search" name="searchKeyword" placeholder="Search free high-resolution photos" >
+                                    </div>
+                        </form>
+                           
+                    </div>
+                    </div>
+                </div>
+                <div class="credit-section">
+                    <ul class="credit-wrap display-flex">
+                        <li class="credit-item left"><a href="">Photo of the Day by Katsiaryna Endruszkiewicz</a></li>
+                        <li class="credit-item center"><a href="">Read more about the Unsplash License</a></li>
+                        <li class="credit-item right">
+                            <div class="credit-img">
+                            <img src="https://images.unsplash.com/file-1593474834382-661b072d9ec8image"></div>
+                            <div>
+                            <a href="">All you need to create a website.</a></li>
+                            </div>
+                    </ul>
+                </div>
+
+            </div>
+
+            
+              
+        </div>
+     
+    </section>
+    <!--Load photo-->
+    <section>
+        <div id="photo-container">
+            <div id="load-images" class="grid">
+                
+            </div>
+            <div class="pagination">
+            </div>
+            <div class="load-more">
+            <button class="previous-button" onclick="previousPage()">Previous Page</button> <button class="next-more" onclick="loadMore()">Next Page</button></div>
+        </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
