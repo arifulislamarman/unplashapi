@@ -92,8 +92,8 @@ function processImage(data){
 
 // Get Value from search field
 
-function searchValue(){
-    event.preventDefault();
+function searchValue(e){
+    e.preventDefault();
     let searchValue = document.getElementById('search-value').value;
     getUnsplashImages(searchValue);
 }
@@ -121,7 +121,10 @@ document.addEventListener('click', event => {
             let xyz = currentLink.split('/t/')[1];
             console.log(xyz);
             getUnsplashImages(xyz);
-        }                
+        }
+        if(location.href.substring(location.href.lastIndexOf('/')+1) == 't' ){
+            window.location.href = "/";
+        }                   
     }
 });
 
