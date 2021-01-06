@@ -98,7 +98,12 @@ function searchValue(e){
     getUnsplashImages(searchValue);
 }
 
-
+window.onload = function ridirection(){
+    if(location.href.substring(location.href.lastIndexOf('/')+1) == 't' ){
+        console.log(location.href.substring(location.href.lastIndexOf('/')+1));
+        window.location.href = "/";
+    }   
+}
 
 
 //disable all click
@@ -122,9 +127,7 @@ document.addEventListener('click', event => {
             console.log(xyz);
             getUnsplashImages(xyz);
         }
-        if(location.href.substring(location.href.lastIndexOf('/')+1) == 't' ){
-            window.location.href = "/";
-        }                   
+                      
     }
 });
 
@@ -153,7 +156,6 @@ $(document).ready(function(){
 
 
 /*
-
 function resizeGridItem(item){
     grid = document.getElementsByClassName("grid")[0];
     rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
