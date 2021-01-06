@@ -96,6 +96,7 @@ function searchValue(e){
     e.preventDefault();
     let searchValue = document.getElementById('search-value').value;
     getUnsplashImages(searchValue);
+    //document.getElementById('search-value').value = '';
 }
 
 window.onload = function ridirection(){
